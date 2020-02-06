@@ -1,0 +1,13 @@
+/* fonts */
+.h3 {
+    font-family: 'Bebas Neue', cursive;
+}
+/* warning */
+.warning {
+    text-align: center;
+    border: solid 5px black;
+}
+
+#warning-title {
+    padding-top: 10px;
+}
