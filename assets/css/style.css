@@ -71,9 +71,15 @@
 }
 /* bio */
 .bio {
-    text-align: center;
     margin-top: 30px;
     margin-left: 70px;
     margin-right: -190px;
     padding: 20px;
+    text-align: center;
+}
+
+.bio-icon {
+    padding-right: 10px;
+    color: green;
+    font-size: 24px;
 }

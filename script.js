@@ -15,9 +15,7 @@ function initMap() {
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-    var error = $("<div>");
-    error.html("An error has occurred. Please reload the page to display the map.");
-    mapDiv.html(error.html);
+    alert("An error has occured. Please reload the page to display the map.");
     infoWindow.setPosition(pos);
     infoWindow.setContent(browserHasGeolocation ?
         'Error: The Geolocation service failed.' :
