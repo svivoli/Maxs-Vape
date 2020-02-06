@@ -63,3 +63,9 @@
   .foundation-5-top-bar .menu a {
     color: black;
   }
+/* content */
+/* map */
+#map-canvas {
+    height: 570px;
+    width: 500px;
+}
