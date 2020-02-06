@@ -69,3 +69,11 @@
     height: 570px;
     width: 500px;
 }
+/* bio */
+.bio {
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-right: -190px;
+    padding: 20px;
+}

@@ -1,3 +1,5 @@
+var mapDiv = $(".map-canvas");
+
 var map, infoWindow;
 function initMap() {
     var latlong = { lat: 47.255389, lng: -122.520929 };
@@ -13,6 +15,9 @@ function initMap() {
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+    var error = $("<div>");
+    error.html("An error has occurred. Please reload the page to display the map.");
+    mapDiv.html(error.html);
     infoWindow.setPosition(pos);
     infoWindow.setContent(browserHasGeolocation ?
         'Error: The Geolocation service failed.' :
