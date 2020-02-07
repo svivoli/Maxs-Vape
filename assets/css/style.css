@@ -147,6 +147,10 @@
     width: 500px;
 }
 /* bio */
+.bio-logo {
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
 .bio {
     margin-top: 30px;
     margin-left: 70px;
