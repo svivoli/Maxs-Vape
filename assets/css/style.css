@@ -6,6 +6,10 @@
 .heading {
   font-family: 'Contrail One', cursive;
 }
+
+.header {
+  padding: 10px 0 10px 55px;
+}
 /* warning */
 .warning {
     text-align: center;
@@ -194,4 +198,24 @@
 /* arrivals */
 .arrivals-header {
   background-color: #B8FF9A;
+}
+
+.products .carousel-indicators {
+  display: none;
+	left: 0;
+	top: auto;
+    bottom: -40px;
+
+}
+
+/* The colour of the indicators */
+.products .carousel-indicators li {
+    background: #a3a3a3;
+    border-radius: 100%;
+    width: 0.5rem;
+    height: 0.05rem;
+}
+
+.products .carousel-indicators .active {
+background: #707070;
 }

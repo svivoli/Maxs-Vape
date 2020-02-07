@@ -23,3 +23,11 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
     infoWindow.open(map);
 };
 
+$('#productCarousel').carousel({
+    interval: 5000
+});
+
+$('ol.carousel-indicators  li').on("click",function(){ 
+    $('ol.carousel-indicators li.active').removeClass("active");
+    $(this).addClass("active");
+});
