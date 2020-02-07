@@ -63,6 +63,83 @@
   .foundation-5-top-bar .menu a {
     color: black;
   }
+
+
+  .items, .items2{
+    margin: 0 auto;
+    max-width: 1140px;
+    padding-top: 17px;
+  }
+  .items2{
+    padding-top:50px;
+  }
+  .items a, .items2 a{
+    display:inline-block;
+    text-decoration:none;
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight:400;
+    margin:0 20px;
+    height: 30px;
+    overflow: hidden;
+  }
+  .items a span{
+    display: inline-block;
+    position:relative;
+    transition: transform 500ms;
+    -webkit-transition: -webkit-transform 500ms;
+    -moz-transition: transform 500ms;
+    
+  }
+  .items a span:after{
+    content: attr(data-hover);
+    position: absolute;
+    top: -30px;
+    left:0;
+    transform: translate3d(0,0,0);
+      -moz-transform: translate3d(0,0,0);
+      -webkit-transform: translate3d(0,0,0);
+  }
+  .items a:hover span,
+  .items a:focus span {
+      transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+  }
+  
+  /* x3 */
+  .items2 a span{
+    display: inline-block;
+    position:relative;
+    transition: transform 600ms;
+    -webkit-transition: -webkit-transform 600ms;
+  }
+  .items2 a span:before{
+    content: attr(data-hover);
+    position: absolute;
+    top: -60px;
+    left:0;
+    transform: translate3d(0,0,0);
+      -moz-transform: translate3d(0,0,0);
+      -webkit-transform: translate3d(0,0,0);
+  }
+  .items2 a span:after{
+    content: attr(data-hover);
+    position: absolute;
+    top: -30px;
+    left:0;
+    transform: translate3d(0,0,0);
+      -moz-transform: translate3d(0,0,0);
+      -webkit-transform: translate3d(0,0,0);
+  }
+  .items2 a:hover span,
+  .items2 a:focus span {
+      transform: translateY(60px);
+    -webkit-transform: translateY(60px);
+    -moz-transform: translateY(60px);
+  }
 /* content */
 /* map */
 #map-canvas {
@@ -78,8 +155,19 @@
     text-align: center;
 }
 
-.bio-icon {
+.facebook, .yelp, .phone {
     padding-right: 10px;
-    color: green;
     font-size: 24px;
+}
+
+.facebook {
+    color: #4266B2;
+}
+
+.yelp {
+    color: red;
+}
+
+.phone {
+    color: black;
 }
