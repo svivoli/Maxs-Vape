@@ -1,3 +1,4 @@
+////// map //////
 var mapDiv = $(".map-canvas");
 
 var map, infoWindow;
@@ -23,6 +24,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
     infoWindow.open(map);
 };
 
+////// product carousel //////
 $('#productCarousel').carousel({
     interval: 5000
 });
@@ -32,6 +34,7 @@ $('ol.carousel-indicators  li').on("click",function(){
     $(this).addClass("active");
 });
 
+////// yelp api - reviews //////
 var myHeaders = new Headers();
 myHeaders.append("Authorization", "Bearer OOk7s2z-Ah8wHSafHFhYrWbPCakH5cOky-ww8r0KAx1wzIB7I0of71jaREePPfNCqUJUHbp3UKkRaXYolHu0zgyAeBXi05NUvA7wFuC9ubWWrY283sIy0OoSTHJEXnYx");
 
