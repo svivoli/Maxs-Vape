@@ -193,6 +193,36 @@
 .phone {
     color: black;
 }
+/* testimonials */
+.reviews {
+  margin-left: 9%;
+}
+
+.review {
+  margin: 5% 0 5% 0;
+  text-align: center;
+}
+
+.stars-outer {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+}
+ 
+ 
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+ 
+.stars-inner {
+  color: #f8ce0b;
+}
+
 /* mods-bar */
 .mods-bar {
     margin-top: 30px;

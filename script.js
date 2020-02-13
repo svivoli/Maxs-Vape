@@ -67,10 +67,27 @@ $.ajax(settings).done(function (response) {
     console.log(response);
 }).then(function (response) {
     for (i = 0; i < 3; i++) {
+        const quote1 = $("<i>").addClass("fas fa-quote-left");
+        quote1.attr("style", "color: lightgrey;");
+        const quote2 = $("<i>").addClass("fas fa-quote-right");
+        quote2.attr("style", "color: lightgrey;");
         const review = $("<div>");
         const body = response.reviews[i].text;
-        review.html(body);
-        reviewDivs[i].html(review.html());
+        review.append(quote1, " ", body, " ", quote2, "</br>", "<br>");
+        reviewDivs[i].prepend(review.html());
+
+        const ratings = {
+            review0 : response.reviews[0].rating,
+            review1 : response.reviews[1].rating,
+            review2 : response.reviews[2].rating
+        };
+        const starTotal = 5;
+
+        for (const rating in ratings) {
+            const starPercentage = (ratings[rating] / starTotal) * 100;
+            const starPercentageRounded = `${(Math.round(starPercentage / 10) * 10)}%`;
+            document.querySelector(`.${rating} .stars-inner`).style.width = starPercentageRounded;
+        }
     }
 });
 
