@@ -1,13 +1,3 @@
-////// product carousel //////
-$('#productCarousel').carousel({
-    interval: 5000
-});
-
-$('ol.carousel-indicators  li').on("click", function () {
-    $('ol.carousel-indicators li.active').removeClass("active");
-    $(this).addClass("active");
-});
-
 ////// map //////
 var mapDiv = $(".map-canvas");
 
@@ -71,6 +61,25 @@ var settings = {
     },
 };
 
+const reviewDivs = [$(".review0"), $(".review1"), $(".review2")]
+
 $.ajax(settings).done(function (response) {
     console.log(response);
+}).then(function (response) {
+    for (i = 0; i < 3; i++) {
+        const review = $("<div>");
+        const body = response.reviews[i].text;
+        review.html(body);
+        reviewDivs[i].html(review.html());
+    }
+});
+
+//// product carousel //////
+$('#productCarousel').carousel({
+    interval: 5000
+});
+
+$('ol.carousel-indicators  li').on("click", function () {
+    $('ol.carousel-indicators li.active').removeClass("active");
+    $(this).addClass("active");
 });
