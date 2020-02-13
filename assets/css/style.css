@@ -223,6 +223,22 @@
   color: #f8ce0b;
 }
 
+.write-review {
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.write-link:hover {
+  text-decoration: none;
+}
+
+.write-btn {
+  border: solid 1px grey;
+}
+
+.write-btn:hover {
+  color: grey;
+}
 /* mods-bar */
 .mods-bar {
     margin-top: 30px;
