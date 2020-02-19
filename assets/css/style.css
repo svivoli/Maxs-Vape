@@ -247,15 +247,36 @@
 }
 
 .feature {
+  position: relative;
   text-align: center;
   margin-right: 95px;
-  border-radius: 100%;
   background-color: #F3F3F3;
 }
 
 .feature img {
   height: 250px;
 }
+
+.title {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 37%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.feature:hover .title {
+  visibility: visible;
+  opacity: 1;
+}
+
+
 /* arrivals */
 .arrivals-header {
   background-color: #B8FF9A;
