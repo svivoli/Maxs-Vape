@@ -290,6 +290,10 @@ background: #707070;
   height: 200px;
 }
 /* arrivals */
+.kit {
+  height: 325px;
+}
+/* products */
 .set {
   margin-left: 8%;
   font-size: 12px;
