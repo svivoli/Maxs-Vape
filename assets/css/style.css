@@ -290,6 +290,11 @@ background: #707070;
   height: 200px;
 }
 /* arrivals */
+.arrivals-set {
+  margin-left: 8%;
+  font-size: 14px;
+}
+
 .kit {
   height: 325px;
 }
