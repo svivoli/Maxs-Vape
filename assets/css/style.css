@@ -293,6 +293,12 @@ background: #707070;
 .kit {
   height: 325px;
 }
+
+.kit1 {
+  height: 225px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 /* products */
 .set {
   margin-left: 8%;
